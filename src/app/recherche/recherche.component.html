@@ -1,0 +1,20 @@
+<section id="header-title" class="col-xs-12 tx_center inscrire">
+  <h1 class="hpsimplified"> Resultat de la Recherche </h1>
+</section>
+<div class="table-responsive">
+  <table class="table">
+    <thead class=" text-primary">
+        <th>Nom Article</th><th>Intitule</th><th>secteur Activite</th>
+        <th>Particulier</th>
+      </thead>
+      <tbody>
+          <tr *ngFor=" let p of pageRecherche ">
+            <td>{{p.content.libelleProfil}}</td>
+           <td>{{p.etat}}</td>
+           <td>{{p.secteurActivite}}</td>
+           <th>{{p.firstName}}</th>
+         </tr>
+      </tbody>
+      </table>
+      </div>
+

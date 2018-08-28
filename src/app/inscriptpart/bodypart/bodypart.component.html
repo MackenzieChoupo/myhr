@@ -1,0 +1,79 @@
+<!-- COMPONENT -->	
+
+<section id="component" class="col-xs-12 no-padding">
+  <div class="form">	
+    <form class="">
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Nom : </label>
+        <input type="text" name="nom_entrep" class="fl_left wid_100" placeholder="Ex. Dubois ..." #nom="ngModel" placeholder = "firstName" required [(ngModel)] = "particulier.firstName" name="firstName">
+      </div>
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> PreNom : </label>
+        <input type="text" name="nom_entrep" class="fl_left wid_100" placeholder="Ex. Michel ..." #prenom="ngModel" placeholder = "lastName" required [(ngModel)] = "particulier.lastName" name="lastName">
+      </div>
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Email : </label>
+        <input type="email" name="nom_entrep" class="fl_left wid_100" placeholder="Ex. mack@exampl.de ..." #email="ngModel" placeholder = "Ex myhr@.com" required [(ngModel)] = "particulier.mail" name="mail">
+      </div>
+
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Ville : </label>
+        <input type="text" name="nom_entrep" class="fl_left wid_100" placeholder="Ex. Yaoundé ..." #email="ngModel"  required [(ngModel)] = "particulier.ville" name="ville">
+      </div>
+
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Entreprise : </label>
+        <input type="text" name="nom_entrep" class="fl_left wid_100" placeholder="Ex. CCA ..." #entreprise="ngModel" placeholder = "" required [(ngModel)] = "particulier.entreprise" name="entreprise">
+      </div>
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Fonction : </label>
+        <input type="text" name="nom_entrep" class="fl_left wid_100" placeholder="Ex. Agent d'entretien ..." #fonction="ngModel" placeholder = "" required [(ngModel)] = "particulier.fonction" name="fonction">
+      </div>
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Téléphone : </label>
+        <input type="tel" name="nom_entrep" class="fl_left wid_100" placeholder="555-45-78-90" #tel="ngModel"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required [(ngModel)] = "particulier.telephone" name="telephone">
+      </div>
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Sexe : </label>
+        <select name="taille_entrep" class="fl_left wid_100" name="sexe" required [(ngModel)] = "particulier.sexe">
+          <option> Homme </option>
+          <option> Femme </option>
+         
+        </select>
+      </div>
+
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Type utilisateur : </label>
+        <select name="taille_entrep" class="fl_left wid_100" 
+        required [(ngModel)] = "particulier.login">
+         <!-- <option> Simple </option>
+          <option> vip </option> 
+          <option> Premium </option>-->
+          <option *ngFor=" let u of utilisateurs " [(ngValue)]="u.login">{{u.login}}</option>
+          
+        </select>
+      </div>
+
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100">Date : </label>
+        <input type="date" name="date-entreprise" class="fl_left wid_100" placeholder=" ..." #date="ngModel" placeholder = "" required [(ngModel)] = "particulier.dateInscription" name="dateInscription">
+      </div>
+
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Mot de passe : </label>
+        <input type="password" name="nom_entrep" class="fl_left wid_100" placeholder=" ..." #login="ngModel" placeholder = "password" required [(ngModel)] = "particulier.password" name="password">
+      </div>
+
+      <div class="margin-bottom-20px fl_left wid_100">
+        <label class="hpsimplified-rg fl_left wid_100"> Confirmer le mot de passe : </label>
+        <input type="password" name="nom_entrep" class="fl_left wid_100" placeholder="  ..."  #login="ngModel" placeholder = "confirmPassword" required [(ngModel)] = "particulier.confirmPassword" name="password">
+      </div>
+      <div class="margin-bottom-20px fl_left wid_100">
+        <input type="submit" class="fl_left wid_50 bg_blue cl_white hpsimplified"  (click)= "savePart()" value="S'inscrire">
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- END COMPONENT 	-->

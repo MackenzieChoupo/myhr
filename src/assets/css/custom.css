@@ -1,0 +1,148 @@
+/* === General ==*/
+body {
+  
+  font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
+  font-size: 16px;
+
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+ h1 {
+  font-size: 3em;
+ }
+
+ h1,h2 {
+    margin: 0 0 40px;
+ }
+ h3 {
+  margin: 20px 0;
+ }
+ h4 {
+    font-size: 18px;
+ }
+
+ .btn {
+  font-weight: bold;
+ }
+.btn-danger {
+  background-color: #dd5638;
+  border-collapse: #d95131;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.badge.social {
+  background: #fff;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 5px 20px 0;
+  padding: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: white;
+}
+
+.badge.social.twitter:hover {
+  background: #55acee;
+}
+
+.badge.social.facebook:hover {
+  background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+  background: #db4b39;
+}
+
+#price-timeline {
+  margin: 30px 0 60px;
+  text-align: center;
+}
+
+
+
+
+/* layout */
+
+#optin {
+    background: #3e4249;
+    padding: 20px 0;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 1.2em;
+}
+
+#optin p {
+  margin:7px 0 0 0;
+}
+
+button, input, .btn, a.btn {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: white;
+}
+.btn {
+  font-weight: bold;
+}
+
+.btn-danger {
+  background-color: #dd5638;
+  border-collapse: #d95131;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+}
+
+section h3 {
+  margin: 30px 0 10px;
+}
+
+section h2 {
+  margin: 20px 0 40px;
+}
+
+#boost-income {
+  background: yellow;
+}
+
+#who-benefits {
+  background: white;
+}
+
+#course-features {
+  background: #3e4249;
+  color: white;
+  text-align: center;
+}
+
+#project-features {
+  text-align: center;
+}
+
+#featurette {
+  background: url('../img/carousel/image-1.jpg') 50% 100% repeat fixed;
+  background-size: cover;
+  background-color: #B8B8B8FF;
+  text-align: center;
+  color: white;
+}

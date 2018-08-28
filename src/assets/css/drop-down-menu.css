@@ -1,0 +1,98 @@
+
+.menu-container {
+  height: 37px;
+}
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+  float: left;
+  padding: 0;
+  list-style: none;
+  height: 37px;
+  text-align: left;
+}
+
+ul.menu > li > a  {
+	    font-size: 13px;
+    background: transparent;
+	border-radius: 3px;
+    display: block;
+    height: 100%;
+    line-height: 38px;
+    text-align: center;
+	    font-family: 'HPSimplified_Rg';
+		color: #000 !important;
+		    padding: 0 17px;
+}
+
+ul.menu > li > a:hover { 
+	background: #f3f3f3; 
+}
+
+ul.menu > li > a:focus { 
+    background: #3e6bfa;
+    color: #fff !important;
+}
+
+ul.menu li a {
+  color: #000;
+  text-decoration: none;
+
+}
+
+ul.menu li:hover {
+  /*#2e2728*/
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.menu ul {
+    background: #f9f9f9;
+    position: relative;
+    top: -1px;
+    display: none;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 5px;
+    z-index: 1;
+    /*box-shadow: 0 13px 46px -28px #000;*/
+}
+
+ul.menu ul li {
+      float: none;
+    position: relative;
+    left: 0;
+    padding: 0;
+    border-top: 1px solid #fff;
+}
+
+ul.menu ul li a {
+	    display: block;
+    font-size: 13px;
+    
+    
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 6px 0 0;
+    
+}
+
+ul.menu ul li a:hover {
+	border: none !important;
+	background: #3e6bfa !important;
+	color: #fff !important;
+	box-shadow: 0 10px 10px -10px #3e6bfa;
+	background: #3e6bfa;
+}
+
+.current {  }
+
+.with-child::after {
+  content: '\25be';
+  color: #ffffff;
+}

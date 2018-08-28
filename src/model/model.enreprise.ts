@@ -1,0 +1,22 @@
+export class ModelEntreprise{
+    id:any;
+    nom:string="";
+    formeJuridique:string="";
+    nombreEmploye:string="";
+    secteurActivite:string="";
+    addresse:string="";
+    siteWeb:string="";
+    telephone:string="";
+    nomRepresentant:string="";
+    fonction:string="";
+    dateInscription=Date;
+    utilisateur:any;
+    login:string="";
+    //roles:any;
+    //role:string="";
+    //date:string="";
+    password:string="";
+    confirmPassword:string="";
+    tailleEntreprise:string="";
+    ville:string="";
+}

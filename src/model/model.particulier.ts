@@ -1,0 +1,19 @@
+export class ModelParticulier{
+    id:any;
+    mail:string="";
+    firstName:string="";
+    lastName:string="";
+    entreprise:string="";
+    fonction:string="";
+    sexe:string="";
+    telephone:string="";
+    dateInscription=Date;
+    utilisateur:any;
+    login:string="";
+    role:string="";
+    roles:any;
+    date:string="";
+    ville:string="";
+    password:string="";
+    confirmPassword:string="";
+}
